@@ -19,6 +19,7 @@ from rest_framework_simplejwt import views as jwt_views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('auth/',include('djoser.urls')),
     # Apps
     path('contas/',include('accounts.urls')),
     path('tarifas/',include('tarifas.urls')),

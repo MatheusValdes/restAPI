@@ -173,6 +173,7 @@ class ContatosDetail(APIView):
         queryset.delete()
         return Response(status=status.HTTP_204_NO_CONTENT)
 
+
 '''
 class ClienteList(APIView):
     # permission_classes = [IsAuthenticated]
